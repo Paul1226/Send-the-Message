@@ -1,0 +1,35 @@
+---
+import Send from '../icons/Send.astro';
+import Delete from '../icons/Delete.astro';
+---
+
+<div class="container__header w-full h-screen flex justify-center items-center">
+    <header class="w-max bg-[#222] p-6 rounded-lg flex flex-col gap-4">
+        <h1 class="text-2xl font-playfair">Sending Emails</h1>
+        <section class="flex flex-col gap-4">
+            <div class="email">
+                <h3 class="mb-2">Email:</h3>
+                <input class="placeholder:text-xs py-1 px-4 w-full rounded-lg text-black" type="email" name="" id="" placeholder="Ej: 5hS7v@example.com">
+            </div>
+
+            <div class="cuestion">
+                <h3 class="mb-2">Cuestion:</h3>
+                <input class="placeholder:text-xs py-1 px-4 w-full rounded-lg text-black" type="text" name="" id="" placeholder="Enter your Cuestion">
+            </div>
+
+            <div class="message">
+                <h3 class="mb-2">Message:</h3>
+                <textarea  class="placeholder:text-xs py-1 px-4 text-black rounded-lg" name="" id="" cols="30" rows="4" placeholder="Enter the menssage"></textarea>
+            </div>
+
+            <div class="buttons flex gap-4">
+                <a href="#" class="flex gap-2 bg-red-400 justify-center w-full px-4 py-2 rounded-lg">
+                    <Send class="w-4 fill-white" />Send
+                </a>
+                <a href="#" class="flex gap-2 bg-red-400 justify-center w-full px-4 py-2 rounded-lg">
+                    <Delete class="w-4 fill-white" />Reset
+                </a>
+            </div>
+        </section>
+    </header>
+</div>
